@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f1">
+  <meta name="description" content="HarvestLink connects surplus food with the people and community kitchens who need it.">
+  <title>HarvestLink — Good food, shared well</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="HarvestLink home"><span class="brand-mark">h</span><span>harvest<span class="brand-light">link</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a class="nav-active" href="#donations">Find food</a><a href="#how">How it works</a><a href="#impact">Our impact</a></nav>
+    <button class="button button-dark header-cta" data-open-form>+ <span>Post a donation</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span>GOOD FOOD. CLOSER TO HOME.</div>
+        <h1>Share more.<br><span>Waste less.</span></h1>
+        <p class="hero-text">A little extra can go a long way. Connect surplus food with the people and community kitchens who need it.</p>
+        <div class="hero-actions"><a class="button button-green" href="#donations">Explore available food <span>↗</span></a><button class="button button-outline" data-open-form>Offer a donation <span>＋</span></button></div>
+        <div class="trust-row"><div class="avatar-stack"><i>G</i><i>K</i><i>M</i><i>+</i></div><span>Good things happen when we share.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of fresh produce ready to be shared">
+        <div class="sun-disc"></div><div class="art-note"><span>✳</span> Every meal matters</div>
+        <div class="market-bag"><div class="bag-handle"></div><div class="bag-front"><div class="bag-label">GOOD<br>THINGS<br>INSIDE</div><div class="bag-stem stem-one"></div><div class="bag-stem stem-two"></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div><div class="leaf leaf-c"></div></div></div>
+        <div class="tomato tomato-one"></div><div class="tomato tomato-two"></div><div class="carrot"><i></i></div>
+        <div class="floating-card"><span class="floating-icon">↗</span><div><strong id="hero-active">—</strong><small>food listings near you</small></div></div>
+        <div class="art-caption">Fresh food, finding its people.</div>
+      </div>
+    </section>
+
+    <section class="impact-strip" id="impact">
+      <div class="impact-intro"><span class="tiny-spark">✳</span><span>SMALL SHARES.<br>REAL CHANGE.</span></div>
+      <div class="impact-metric"><strong id="stat-active">—</strong><span>available listings</span></div>
+      <div class="impact-metric"><strong id="stat-meals">—</strong><span>portions &amp; packs shared</span></div>
+      <div class="impact-metric"><strong id="stat-rescued">—</strong><span>donations collected</span></div>
+      <div class="impact-message">Better together <span>↗</span></div>
+    </section>
+
+    <section class="listings-section" id="donations">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span>THE COMMUNITY BOARD</div><h2>Good food, up for grabs.</h2><p>Find a nearby donation and give it a second home.</p></div><button class="button button-dark section-cta" data-open-form>+ Post a donation</button></div>
+      <div class="toolbar"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Search food, donor or location" aria-label="Search donations"></label><label class="select-wrap"><span class="filter-icon">☷</span><select id="category" aria-label="Filter by category"><option value="all">All categories</option><option>Produce</option><option>Bakery</option><option>Prepared meals</option><option>Dairy</option><option>Pantry</option><option>Other</option></select></label><label class="select-wrap"><span>◉</span><select id="status-filter" aria-label="Filter by availability"><option value="all">Any status</option><option value="available">Available now</option><option value="reserved">Reserved</option><option value="collected">Collected</option></select></label><span class="result-count" id="result-count"></span></div>
+      <div class="cards-grid" id="donation-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>◌</span><h3>No matches just yet</h3><p>Try another search or clear a filter to see more donations.</p><button class="text-button" id="clear-filters">Clear filters ↗</button></div>
+      <div class="loading-state" id="loading-state">Loading the community board…</div>
+    </section>
+
+    <section class="how-section" id="how"><div class="how-heading"><div class="eyebrow"><span class="eyebrow-line"></span>GOOD FOOD, GOOD FLOW</div><h2>Three steps to a<br>little less waste.</h2></div><div class="steps"><article><span class="step-number">01</span><span class="step-icon">♧</span><h3>List what you have</h3><p>Share the food, quantity and pickup window. A few details help the right people find it.</p></article><article><span class="step-number">02</span><span class="step-icon">↗</span><h3>Connect with a neighbor</h3><p>Community groups browse nearby food and reserve what they can put to good use.</p></article><article><span class="step-number">03</span><span class="step-icon">♡</span><h3>Make good go further</h3><p>Arrange a simple handoff and mark it collected. Your extra becomes someone’s something.</p></article></div></section>
+    <section class="bottom-banner"><div class="banner-spark">✳</div><div><span>HAVE A LITTLE EXTRA?</span><h2>Someone nearby could use it.</h2></div><button class="button button-cream" data-open-form>Share a donation <span>↗</span></button></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">h</span><span>harvest<span class="brand-light">link</span></span></a><span>Good food moves us forward.</span><span>Made for the moments we share <b>✳</b></span></footer>
+
+  <dialog id="donation-dialog" class="donation-dialog"><form id="donation-form"><div class="dialog-head"><div><div class="eyebrow"><span class="eyebrow-line"></span>MAKE A DIFFERENCE</div><h2>Share what you have.</h2><p>A few details help a neighbor collect it safely.</p></div><button type="button" class="close-button" aria-label="Close dialog">×</button></div><div class="form-grid"><label class="field full">What are you sharing?<input name="title" required maxlength="90" placeholder="e.g. Fresh vegetable boxes"></label><label class="field">Food category<select name="category" required><option value="">Choose one</option><option>Produce</option><option>Bakery</option><option>Prepared meals</option><option>Dairy</option><option>Pantry</option><option>Other</option></select></label><div class="field"><span>How much?</span><div class="quantity-row"><input name="quantity" type="number" min="0.1" step="0.1" required placeholder="12"><select name="unit" required><option>meals</option><option>boxes</option><option>kg</option><option>items</option><option>litres</option></select></div></div><label class="field">Pickup location<input name="location" required maxlength="120" placeholder="Neighborhood, city"></label><label class="field">Pickup by<input name="expires_at" type="datetime-local" required></label><label class="field">Your name or organization<input name="donor" required maxlength="70" placeholder="Community Kitchen"></label><label class="field">Contact phone<input name="phone" required maxlength="40" placeholder="+91 …"></label><label class="field full">Anything else to know? <span class="optional">Optional</span><textarea name="notes" maxlength="500" rows="3" placeholder="Storage, allergens, pickup instructions…"></textarea></label></div><p class="form-error" id="form-error" role="alert"></p><div class="dialog-actions"><span>Thank you for making good go further. ♡</span><button class="button button-green" type="submit">Post donation <span>↗</span></button></div></form></dialog>
+  <dialog id="claim-dialog" class="claim-dialog"><form id="claim-form"><div class="dialog-head"><div><div class="eyebrow"><span class="eyebrow-line"></span>RESERVE THIS DONATION</div><h2>Who’s picking it up?</h2><p>Share your organization name so the donor knows who to expect.</p></div><button type="button" class="close-button" aria-label="Close dialog">×</button></div><label class="field">Organization or community group<input name="partner" required maxlength="70" placeholder="Your group’s name"></label><p class="form-error" id="claim-error" role="alert"></p><div class="dialog-actions"><span>Coordinate the handoff directly with the donor.</span><button class="button button-green" type="submit">Reserve food <span>↗</span></button></div></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
